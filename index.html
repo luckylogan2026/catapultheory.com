@@ -225,7 +225,11 @@ nav.scrolled {
 }
 @media (max-width: 800px) { .methodology-inner { grid-template-columns: 1fr; gap: 3rem; } }
 
-.methodology-left { position: sticky; top: 8rem; }
+.methodology-left { position: relative; }
+  
+@media (min-width: 800px) {
+  .methodology-left { position: sticky; top: 8rem; }
+}
 .methodology-left .eyebrow { color: var(--gold); margin-bottom: 1.5rem; }
 .methodology-left h2 {
   font-family: var(--serif);
